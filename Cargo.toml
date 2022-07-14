@@ -1,0 +1,12 @@
+[package]
+name = "quic-initial-degreaser"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+s2n-quic-core = "0.7.1"
+s2n-codec = "0.1.0"
+s2n-quic-crypto = "0.7.1"
+
