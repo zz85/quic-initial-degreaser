@@ -144,7 +144,8 @@ pub fn generate_initial_packet(intial: MinimalQuicPacket) -> Option<Vec<u8>> {
             )
             .map_err(|_e| {
                 // won't parse 2nd initial packet actually
-            }).ok()?;
+            })
+            .ok()?;
         protected_packet.len()
     };
 

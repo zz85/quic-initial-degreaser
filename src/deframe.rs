@@ -29,7 +29,7 @@ pub fn process_entry(slice: &mut [u8]) -> Option<()> {
         udp.set_length((new_payload.len() + diff) as u16);
         udp.set_payload(&new_payload);
 
-        return Some(())
+        return Some(());
     }
 
     None
