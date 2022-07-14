@@ -21,6 +21,14 @@ Initial QUIC Packets rewritten: 1
 Total entries written: 22
 ```
 
+- Before
+![](samples/before-a.png)
+![](samples/before-b.png)
+
+- After
+![](samples/after-a.png)
+![](samples/after-b.png)
+
 #### API
 
 ```
