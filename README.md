@@ -8,6 +8,21 @@ Fortunately, AWS's QUIC library [s2n-quic](https://github.com/aws/s2n-quic) prov
 
 ### Usage
 
+#### CLI
+
+Sample usage
+```
+$ quic-initial-degreaser test.pcap out.pcap
+
+Input: test.pcap
+Output: out.pcap
+
+Initial QUIC Packets rewritten: 1
+Total entries written: 22
+```
+
+#### API
+
 ```
 quic_initial_degreaser::degrease_initial_packet(bytes)
 ```

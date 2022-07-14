@@ -142,10 +142,9 @@ pub fn generate_initial_packet(intial: MinimalQuicPacket) -> Option<Vec<u8>> {
                 None,
                 encoder,
             )
-            .map_err(|e| {
-                println!("Err {:?}", e);
-            })
-            .expect("packet protection failed");
+            .map_err(|_e| {
+                // won't parse 2nd initial packet actually
+            }).ok()?;
         protected_packet.len()
     };
 
